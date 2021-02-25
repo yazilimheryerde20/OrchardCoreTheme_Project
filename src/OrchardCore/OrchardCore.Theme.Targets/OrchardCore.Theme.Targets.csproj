@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
+    <!-- NuGet properties-->
+    <Title>Target for OrchardCore Theme</Title>
+    <Description>$(OCCMSDescription)
+    
+    Converts project/library into an OrchardCore Theme that can be referenced in OrchardCore CMS application.</Description>
+    <PackageTags>$(PackageTags) OrchardCoreCMS</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <!-- Add a ".props" file in the package specific to the "Theme" module type -->
+  <ItemGroup>
+    <None Include="OrchardCore.Theme.Targets.props" Pack="true">
+      <PackagePath>build\$(TargetFramework)\OrchardCore.Theme.Targets.props</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OrchardCore.Module.Targets\OrchardCore.Module.Targets.csproj" PrivateAssets="none" />
+  </ItemGroup>
+
+</Project>

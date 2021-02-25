@@ -1,0 +1,1010 @@
+{
+  "name": "Creative",
+  "displayName": "Creative",
+  "description": "Sample Theme",
+  "author": "EA",
+  "website": "",
+  "version": "1",
+  "issetuprecipe": false,
+  "categories": ["Berber","Mimarlık"],
+  "tags": ["Bootstrap 4.5","CSS3"],
+  "steps": [
+    {
+      "name": "Content",
+      "data": [
+        {
+          "ContentItemId": "[js: uuid()]",
+          "ContentType": "HtmlWidget",
+          "DisplayText": "Footer",
+          "Latest": true,
+          "Published": true,
+          "Owner": "[js: parameters('AdminUserId')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "LayerMetadata": {
+            "Layer": "Always",
+            "Zone": "Footer",
+            "RenderTitle": false,
+            "Position": 10.0
+          },
+          "HtmlWidget": {
+            "Content": {
+              "Html": "<footer class=\"bg-light py-5\">\n            <div class=\"container\"><div class=\"small text-center text-muted\">Copyright © 2020 - Start Bootstrap</div></div>\n        </footer>"
+            }
+          }
+        },
+        {
+          "ContentItemId": "[js: uuid()]",
+          "ContentType": "LiquidWidget",
+          "DisplayText": "Navigation",
+          "Latest": true,
+          "Published": true,
+          "Owner": "[js: parameters('AdminUserId')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "LiquidPart": {
+            "Liquid": "<nav class=\"navbar navbar-expand-lg navbar-light fixed-top py-3\" id=\"mainNav\">\r\n            <div class=\"container\">\r\n                <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">{{Site.SiteName}}</a>\r\n                <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button>\r\n                {% shape \"menu\", alias: \"alias:main-menu\", cache_id: \"main-menu\", cache_tag: \"alias:main-menu\" %} \r\n            </div>\r\n        </nav>\r\n"
+          },
+          "LayerMetadata": {
+            "RenderTitle": false,
+            "Position": 1.0,
+            "Zone": "Navigation",
+            "Layer": "Always"
+          }
+        },
+        {
+          "ContentItemId": "[js: uuid()]",
+          "ContentType": "LandingPage",
+          "DisplayText": "Creative Theme",
+          "Latest": true,
+          "Published": true,
+          "Owner": "[js: parameters('AdminUserId')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "LandingPage": {},
+          "AutoroutePart": {
+            "Path": "home-page",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "TitlePart": {
+            "Title": "Creative Theme"
+          },
+          "Services": {
+            "ContentItems": [
+              {
+                "ContentItemId": "4txfn81rwnjhd634j4t4xv16d8",
+                "ContentItemVersionId": null,
+                "ContentType": "Service",
+                "DisplayText": "Sturdy Themes",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:46.6335276Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Service": {
+                  "IconClass": {
+                    "Text": "fas fa-4x fa-gem text-primary mb-4"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "Our themes are updated regularly to keep them bug free!"
+                },
+                "TitlePart": {
+                  "Title": "Sturdy Themes"
+                }
+              },
+              {
+                "ContentItemId": "48egebdyyd6f31mrxq325rgfnx",
+                "ContentItemVersionId": null,
+                "ContentType": "Service",
+                "DisplayText": "Up to Date",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.2365223Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Service": {
+                  "IconClass": {
+                    "Text": "fas fa-4x fa-laptop-code text-primary mb-4"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "All dependencies are kept current to keep things fresh."
+                },
+                "TitlePart": {
+                  "Title": "Up to Date"
+                }
+              },
+              {
+                "ContentItemId": "4rv2txf9hmsedva0bmj9jdevdk",
+                "ContentItemVersionId": null,
+                "ContentType": "Service",
+                "DisplayText": "Ready to Publish",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.241758Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Service": {
+                  "IconClass": {
+                    "Text": "fas fa-4x fa-globe text-primary mb-4"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "You can use this design as is, or you can make changes!"
+                },
+                "TitlePart": {
+                  "Title": "Ready to Publish"
+                }
+              },
+              {
+                "ContentItemId": "4qw36zq8qsjgpxkayks214zv5v",
+                "ContentItemVersionId": null,
+                "ContentType": "Service",
+                "DisplayText": "Made with Love",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.2459316Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Service": {
+                  "IconClass": {
+                    "Text": "fas fa-4x fa-heart text-primary mb-4"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "Is it really open source if it's not made with love?"
+                },
+                "TitlePart": {
+                  "Title": "Made with Love"
+                }
+              }
+            ]
+          },
+          "Portfolio": {
+            "ContentItems": [
+              {
+                "ContentItemId": "4kmj9greqncn1yb70gg78kvqme",
+                "ContentItemVersionId": null,
+                "ContentType": "Project",
+                "DisplayText": "Threads",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.2527459Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Project": {
+                  "Image": {
+                    "Paths": [
+                      "/portfolio/01-full.jpg"
+                    ],
+                    "MediaTexts": [
+                      ""
+                    ]
+                  },
+                  "Category": {
+                    "Text": "Illustrations"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!"
+                },
+                "TitlePart": {
+                  "Title": "Threads"
+                }
+              },
+              {
+                "ContentItemId": "4gkm2bbbkkzzkrdkqry187gwdw",
+                "ContentItemVersionId": null,
+                "ContentType": "Project",
+                "DisplayText": "Explore",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.2715826Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Project": {
+                  "Image": {
+                    "Paths": [
+                      "/portfolio/02-full.jpg"
+                    ],
+                    "MediaTexts": [
+                      ""
+                    ]
+                  },
+                  "Category": {
+                    "Text": "Graphic Design"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!"
+                },
+                "TitlePart": {
+                  "Title": "Explore"
+                }
+              },
+              {
+                "ContentItemId": "4bckk5qd1pne826b70j1n4r34z",
+                "ContentItemVersionId": null,
+                "ContentType": "Project",
+                "DisplayText": "Finish",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.2766597Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Project": {
+                  "Image": {
+                    "Paths": [
+                      "/portfolio/03-full.jpg"
+                    ],
+                    "MediaTexts": [
+                      ""
+                    ]
+                  },
+                  "Category": {
+                    "Text": "Identity"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!"
+                },
+                "TitlePart": {
+                  "Title": "Finish"
+                }
+              },
+              {
+                "ContentItemId": "4rsbym1j1g71c3pvgqfh8scxwx",
+                "ContentItemVersionId": null,
+                "ContentType": "Project",
+                "DisplayText": "Lines",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.2814446Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Project": {
+                  "Image": {
+                    "Paths": [
+                      "/portfolio/04-full.jpg"
+                    ],
+                    "MediaTexts": [
+                      ""
+                    ]
+                  },
+                  "Category": {
+                    "Text": "Branding"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!"
+                },
+                "TitlePart": {
+                  "Title": "Lines"
+                }
+              },
+              {
+                "ContentItemId": "4ca29d6ag79qhywdkb07692mn0",
+                "ContentItemVersionId": null,
+                "ContentType": "Project",
+                "DisplayText": "Southwest",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.2853879Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Project": {
+                  "Image": {
+                    "Paths": [
+                      "/portfolio/05-full.jpg"
+                    ],
+                    "MediaTexts": [
+                      ""
+                    ]
+                  },
+                  "Category": {
+                    "Text": "Web Design"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!"
+                },
+                "TitlePart": {
+                  "Title": "Southwest"
+                }
+              },
+              {
+                "ContentItemId": "47mgvbke2hjz5v84t5pwmna54k",
+                "ContentItemVersionId": null,
+                "ContentType": "Project",
+                "DisplayText": "Window",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.2892944Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Project": {
+                  "Image": {
+                    "Paths": [
+                      "/portfolio/06-full.jpg"
+                    ],
+                    "MediaTexts": [
+                      ""
+                    ]
+                  },
+                  "Category": {
+                    "Text": "Photography"
+                  }
+                },
+                "HtmlBodyPart": {
+                  "Html": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!"
+                },
+                "TitlePart": {
+                  "Title": "Window"
+                }
+              }
+            ]
+          },
+          "About": {
+            "ContentItems": [
+              {
+                "ContentItemId": "42tm71p06sm0608tg03tz1evm1",
+                "ContentItemVersionId": null,
+                "ContentType": "About",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.2952382Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "About": {
+                  "HeadTitle": {
+                    "Text": "We've got what you need!"
+                  },
+                  "Description": {
+                    "Text": "Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!"
+                  },
+                  "Link": {
+                    "Url": "#",
+                    "Text": "Haydi Durma"
+                  }
+                }
+              }
+            ]
+          },
+          "Team": {
+            "ContentItems": [
+              {
+                "ContentItemId": "47wnv73j6msac6qtk6f7q1x2d6",
+                "ContentItemVersionId": "4k8vrdbkw2h8ywvqn5wg9416xh",
+                "ContentType": "TeamMember",
+                "DisplayText": "Kay Garland",
+                "Latest": false,
+                "Published": false,
+                "Owner": null,
+                "Author": "admin",
+                "TeamMember": {
+                  "Occupation": {
+                    "Text": "Lead Designer"
+                  },
+                  "Picture": {
+                    "Paths": [
+                      "/team/1.jpg"
+                    ]
+                  },
+                  "Twitter": {
+                    "Text": "@BillGates"
+                  },
+                  "Facebook": {
+                    "Text": "BillGates"
+                  },
+                  "LinkedIn": {
+                    "Text": "williamhgates"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Kay Garland"
+                }
+              },
+              {
+                "ContentItemId": "4eepb5y13a44e5mac12bhs95cw",
+                "ContentItemVersionId": "4k7r4nkrhphwa0egber3ynd0m7",
+                "ContentType": "TeamMember",
+                "DisplayText": "Larry Parker",
+                "Latest": false,
+                "Published": false,
+                "Owner": null,
+                "Author": "admin",
+                "TeamMember": {
+                  "Occupation": {
+                    "Text": "Lead Marketer"
+                  },
+                  "Picture": {
+                    "Paths": [
+                      "/team/2.jpg"
+                    ]
+                  },
+                  "Twitter": {
+                    "Text": "@BillGates"
+                  },
+                  "Facebook": {
+                    "Text": "BillGates"
+                  },
+                  "LinkedIn": {
+                    "Text": "williamhgates"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Larry Parker"
+                }
+              },
+              {
+                "ContentItemId": "4a6kq1tejp9k979tqe4d35kjcc",
+                "ContentItemVersionId": "48a7n8myebyf82xaf17vsat3c2",
+                "ContentType": "TeamMember",
+                "DisplayText": "Diana Pertersen",
+                "Latest": false,
+                "Published": false,
+                "Owner": null,
+                "Author": "admin",
+                "TeamMember": {
+                  "Occupation": {
+                    "Text": "Lead Developer"
+                  },
+                  "Picture": {
+                    "Paths": [
+                      "/team/3.jpg"
+                    ]
+                  },
+                  "Twitter": {
+                    "Text": "@BillGates"
+                  },
+                  "Facebook": {
+                    "Text": "BillGates"
+                  },
+                  "LinkedIn": {
+                    "Text": "williamhgates"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Diana Pertersen"
+                }
+              }
+            ]
+          },
+          "Clients": {
+            "ContentItems": [
+              {
+                "ContentItemId": "40t7g2200m8eptkcc8s0hmfdm6",
+                "ContentItemVersionId": "4zh2wc5kwt5pp6ev5dh1gz374q",
+                "ContentType": "Client",
+                "DisplayText": "Envato",
+                "Latest": false,
+                "Published": false,
+                "Owner": null,
+                "Author": "admin",
+                "Client": {
+                  "Logo": {
+                    "Paths": [
+                      "/logos/envato.jpg"
+                    ]
+                  },
+                  "Url": {
+                    "Text": "#"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Envato"
+                }
+              },
+              {
+                "ContentItemId": "4rg2095xcjcj314xva7j6415mq",
+                "ContentItemVersionId": "4qysb605n5tqh3xe5me1hyy851",
+                "ContentType": "Client",
+                "DisplayText": "Design Moto",
+                "Latest": false,
+                "Published": false,
+                "Owner": null,
+                "Author": "admin",
+                "Client": {
+                  "Logo": {
+                    "Paths": [
+                      "/logos/designmodo.jpg"
+                    ]
+                  },
+                  "Url": {
+                    "Text": "#"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Design Moto"
+                }
+              },
+              {
+                "ContentItemId": "4gr9skx63hqjeznrcred5zjsxb",
+                "ContentItemVersionId": "4rbd8p91gy3g34tekwzyftqf5w",
+                "ContentType": "Client",
+                "DisplayText": "ThemeForest",
+                "Latest": false,
+                "Published": false,
+                "Owner": null,
+                "Author": "admin",
+                "Client": {
+                  "Logo": {
+                    "Paths": [
+                      "/logos/themeforest.jpg"
+                    ]
+                  },
+                  "Url": {
+                    "Text": "#"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "ThemeForest"
+                }
+              },
+              {
+                "ContentItemId": "4xtn8ezydahf0xba7t812xdp5a",
+                "ContentItemVersionId": "4ms9nf43g7esz2ng13jssrg8c8",
+                "ContentType": "Client",
+                "DisplayText": "Creative",
+                "Latest": false,
+                "Published": false,
+                "Owner": null,
+                "Author": "admin",
+                "Client": {
+                  "Logo": {
+                    "Paths": [
+                      "/logos/creative-market.jpg"
+                    ]
+                  },
+                  "Url": {
+                    "Text": "#"
+                  }
+                },
+                "TitlePart": {
+                  "Title": "Creative"
+                }
+              }
+            ]
+          },
+          "Contact": {
+            "ContentItems": [
+              {
+                "ContentItemId": "4qasg4939p5mt1d5x9bnar0vcd",
+                "ContentItemVersionId": null,
+                "ContentType": "Contact",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.3061143Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Contact": {
+                  "HeadTitle": {
+                    "Text": "Let's Get In Touch!"
+                  },
+                  "Description": {
+                    "Text": "Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!"
+                  },
+                  "PhoneIcon": {
+                    "Text": "fas fa-phone fa-3x mb-3 text-muted"
+                  },
+                  "PhoneNumber": {
+                    "Text": "+1 (555) 123-4567"
+                  },
+                  "MailIcon": {
+                    "Text": "fas fa-envelope fa-3x mb-3 text-muted"
+                  },
+                  "MailAddress": {
+                    "Text": "contact@yourwebsite.com"
+                  }
+                }
+              }
+            ]
+          },
+          "Download": {
+            "ContentItems": [
+              {
+                "ContentItemId": "4gew86mnr6183r2j7rgb4whgxt",
+                "ContentItemVersionId": null,
+                "ContentType": "Download",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.3115898Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "Download": {
+                  "Content": {
+                    "Text": "Free Download at Start Bootstrap!"
+                  },
+                  "Link": {
+                    "Url": "#",
+                    "Text": "Download"
+                  }
+                }
+              }
+            ]
+          },
+          "Header": {
+            "ContentItems": [
+              {
+                "ContentItemId": "4wvejawr3e83fskk8kkxhhg2d2",
+                "ContentItemVersionId": null,
+                "ContentType": "Header",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T13:28:47.3143492Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "Header": {
+                  "HeadTitle": {
+                    "Text": "YOUR FAVORİTE SOURCE OF FREE BOOTSTRAP THEMES"
+                  },
+                  "Description": {
+                    "Text": "Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!"
+                  },
+                  "Link": {
+                    "Url": "#",
+                    "Text": "Tıklayi ve"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "ContentItemId": "[js: uuid()]",
+          "ContentType": "Menu",
+          "DisplayText": "Main Menu",
+          "Latest": true,
+          "Published": true,
+          "Owner": "[js: parameters('AdminUserId')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "MenuPart": {},
+          "TitlePart": {
+            "Title": "Main Menu"
+          },
+          "MenuItemsListPart": {
+            "MenuItems": [
+              {
+                "ContentItemId": "4hszhmwxsc372zp6fzj22hgg40",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": null,
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": null,
+                "LinkMenuItemPart": {
+                  "Name": "Services",
+                  "Url": "~/#services"
+                }
+              },
+              {
+                "ContentItemId": "47h75mcevtqmjvx83mjxbn2k5m",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": null,
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": null,
+                "LinkMenuItemPart": {
+                  "Name": "Portfolio",
+                  "Url": "~/#portfolio"
+                }
+              },
+              {
+                "ContentItemId": "4traty9xjh0nz5xjtwsd3pscnk",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": null,
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": null,
+                "LinkMenuItemPart": {
+                  "Name": "About",
+                  "Url": "~/#about"
+                }
+              },
+              {
+                "ContentItemId": "4feh8g90n3r147atcb05arr6d2",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": null,
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": null,
+                "LinkMenuItemPart": {
+                  "Name": "Download",
+                  "Url": "~/#download"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "43hn9q5p51dmx287w708fr62wz",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": null,
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": null,
+                "LinkMenuItemPart": {
+                  "Name": "Contact",
+                  "Url": "~/#contact"
+                }
+              },
+              {
+                "ContentItemId": "4b3rzzz8kmqqrt8gestq11s15x",
+                "ContentItemVersionId": null,
+                "ContentType": "ContentMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-02-23T15:14:41.0701277Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "ContentMenuItemPart": {
+                  "Name": "Yeni Sayfa",
+                  "SelectedContentItem": {
+                    "ContentItemIds": [
+                      "4saj5m63gnk45t1ddkk9hx95nc"
+                    ]
+                  }
+                },
+                "ContentMenuItem": {}
+              }
+            ]
+          },
+          "AliasPart": {
+            "Alias": "main-menu"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Feature",
+      "enable": [
+        "Application.Default",
+        "OrchardCore.Cms.Web",
+        "OrchardCore.Settings",
+        "OrchardCore.Admin",
+        "OrchardCore.Liquid",
+        "OrchardCore.Contents",
+        "OrchardCore.ContentTypes",
+        "OrchardCore.Templates",
+        "OrchardCore.Alias",
+        "OrchardCore.Autoroute",
+        "OrchardCore.Shortcodes",
+        "OrchardCore.ContentFields",
+        "OrchardCore.ContentPreview",
+        "OrchardCore.Deployment",
+        "OrchardCore.Contents.FileContentDefinition",
+        "OrchardCore.CustomSettings",
+        "OrchardCore.Deployment.Remote",
+        "OrchardCore.Diagnostics",
+        "OrchardCore.DynamicCache",
+        "OrchardCore.Resources",
+        "OrchardCore.Widgets",
+        "OrchardCore.Features",
+        "OrchardCore.Feeds",
+        "OrchardCore.Flows",
+        "OrchardCore.HomeRoute",
+        "OrchardCore.Html",
+        "OrchardCore.Scripting",
+        "OrchardCore.Layers",
+        "OrchardCore.Lists",
+        "OrchardCore.Markdown",
+        "OrchardCore.Media",
+        "OrchardCore.Title",
+        "OrchardCore.Menu",
+        "OrchardCore.Navigation",
+        "OrchardCore.Placements",
+        "OrchardCore.Queries",
+        "OrchardCore.Users",
+        "OrchardCore.Recipes",
+        "OrchardCore.Roles",
+        "OrchardCore.Shortcodes.Templates",
+        "OrchardCore.Themes",
+        "SafeMode",
+        "TheAdmin",
+        "TheAgencyTheme",
+        "TheCreativeTheme"
+      ],
+      "disable": [
+        "OrchardCore.AdminDashboard",
+        "OrchardCore.AdminMenu",
+        "OrchardCore.AdminTemplates",
+        "OrchardCore.Apis.GraphQL",
+        "OrchardCore.BackgroundTasks",
+        "OrchardCore.ContentFields.Indexing.SQL",
+        "OrchardCore.Localization",
+        "OrchardCore.ContentLocalization",
+        "OrchardCore.ContentLocalization.ContentCulturePicker",
+        "OrchardCore.Sitemaps",
+        "OrchardCore.ContentLocalization.Sitemaps",
+        "OrchardCore.Contents.Deployment.AddToDeploymentPlan",
+        "OrchardCore.Contents.Deployment.Download",
+        "OrchardCore.Contents.Deployment.ExportContentToDeploymentTarget",
+        "OrchardCore.Cors",
+        "OrchardCore.DataProtection.Azure",
+        "OrchardCore.Email",
+        "OrchardCore.Facebook",
+        "OrchardCore.Facebook.Login",
+        "OrchardCore.Facebook.Widgets",
+        "OrchardCore.Forms",
+        "OrchardCore.GitHub.Authentication",
+        "OrchardCore.Google.Analytics",
+        "OrchardCore.Google.GoogleAuthentication",
+        "OrchardCore.HealthChecks",
+        "OrchardCore.Https",
+        "OrchardCore.Indexing",
+        "OrchardCore.Lucene",
+        "OrchardCore.Lucene.ContentPicker",
+        "OrchardCore.Lucene.Worker",
+        "OrchardCore.Media.Cache",
+        "OrchardCore.Media.Azure.Storage",
+        "OrchardCore.Media.Slugify",
+        "OrchardCore.Microsoft.Authentication.AzureAD",
+        "OrchardCore.Microsoft.Authentication.MicrosoftAccount",
+        "OrchardCore.MiniProfiler",
+        "OrchardCore.OpenId",
+        "OrchardCore.OpenId.Client",
+        "OrchardCore.OpenId.Management",
+        "OrchardCore.OpenId.Server",
+        "OrchardCore.OpenId.Validation",
+        "OrchardCore.Placements.FileStorage",
+        "OrchardCore.PublishLater",
+        "OrchardCore.Queries.Sql",
+        "OrchardCore.ReCaptcha",
+        "OrchardCore.ReCaptcha.Users",
+        "OrchardCore.Redis",
+        "OrchardCore.Redis.Bus",
+        "OrchardCore.Redis.Cache",
+        "OrchardCore.Redis.DataProtection",
+        "OrchardCore.Redis.Lock",
+        "OrchardCore.XmlRpc",
+        "OrchardCore.RemotePublishing",
+        "OrchardCore.ResponseCompression",
+        "OrchardCore.ReverseProxy",
+        "OrchardCore.Setup",
+        "OrchardCore.Sitemaps.Cleanup",
+        "OrchardCore.Sitemaps.RazorPages",
+        "OrchardCore.Taxonomies",
+        "OrchardCore.Taxonomies.ContentsAdminList",
+        "OrchardCore.Tenants",
+        "OrchardCore.Tenants.Distributed",
+        "OrchardCore.Tenants.FileProvider",
+        "OrchardCore.Twitter",
+        "OrchardCore.Twitter.Signin",
+        "OrchardCore.Users.ChangeEmail",
+        "OrchardCore.Users.CustomUserSettings",
+        "OrchardCore.Users.Registration",
+        "OrchardCore.Users.ResetPassword",
+        "OrchardCore.Users.TimeZone",
+        "OrchardCore.Workflows",
+        "OrchardCore.Workflows.Http",
+        "OrchardCore.Workflows.Timers",
+        "TheBlogTheme",
+        "TheComingSoonTheme",
+        "TheTheme"
+      ]
+    },
+    {
+      "name": "Layers",
+      "Layers": [
+        {
+          "Name": "Always",
+          "Rule": "true",
+          "Description": "The widgets in this layer are displayed on any page of this site."
+        },
+        {
+          "Name": "Homepage",
+          "Rule": "isHomepage()",
+          "Description": "The widgets in this layer are only displayed on the homepage."
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "LayerSettings": {
+        "Zones": [
+          "Navigation",
+          "Footer"
+        ]
+      }
+    },
+    {
+      "name": "MediaProfiles",
+      "MediaProfiles": {
+        "medium": {
+          "Hint": "A medium image (480px x 480px)",
+          "Width": 480,
+          "Height": 480,
+          "Mode": 0,
+          "Format": 0,
+          "Quality": 100,
+          "BackgroundColor": null
+        },
+        "small": {
+          "Hint": "A small image (240px x 240px)",
+          "Width": 240,
+          "Height": 240,
+          "Mode": 0,
+          "Format": 0,
+          "Quality": 100,
+          "BackgroundColor": null
+        },
+        "extrasmall": {
+          "Hint": "A extra small image (160px x 160px)",
+          "Width": 160,
+          "Height": 160,
+          "Mode": 0,
+          "Format": 0,
+          "Quality": 100,
+          "BackgroundColor": null
+        }
+      }
+    },
+    {
+      "name": "Templates",
+      "Templates": {
+        "Content__LandingPage": {
+          "Content": "<header class=\"masthead\">\r\n \r\n            <div class=\"container h-100\">\r\n            {% for header in Model.ContentItem.Content.Header.ContentItems %}\r\n                <div class=\"row h-100 align-items-center justify-content-center text-center\">\r\n                    <div class=\"col-lg-10 align-self-end\">\r\n                        <h1 class=\"text-uppercase text-white font-weight-bold\">{{ header.Header.HeadTitle.Text }}</h1>\r\n                        <hr class=\"divider my-4\" />\r\n                    </div>\r\n                    <div class=\"col-lg-8 align-self-baseline\">\r\n                      \r\n                        <p class=\"text-white-75 font-weight-light mb-5\">{{ header.Header.Description.Text }}</p>\r\n                        <a class=\"btn btn-primary btn-xl js-scroll-trigger\" href=\"{{header.Header.Link.Url}}\">{{header.Header.Link.Text}}</a>\r\n                    </div>\r\n                </div>\r\n             {%endfor%}\r\n            </div>\r\n        </header>\r\n<!-- About-->\r\n        <section class=\"page-section bg-primary\" id=\"about\">\r\n            <div class=\"container\">\r\n                <div class=\"row justify-content-center\">\r\n                  {%for about in Model.ContentItem.Content.About.ContentItems%}\r\n                    <div class=\"col-lg-8 text-center\">\r\n                      \r\n                        <h2 class=\"text-white mt-0\">{{ about.About.HeadTitle.Text }}</h2>\r\n                        <hr class=\"divider light my-4\" />\r\n                        <p class=\"text-white-50 mb-4\">{{ about.About.Description.Text }}</p>\r\n                        <a class=\"btn btn-light btn-xl js-scroll-trigger\" href=\"{{ about.About.Link.Url }}\">{{ about.About.Link.Text }}</a>\r\n                    </div>\r\n                </div>\r\n              {%endfor%}\r\n            </div>\r\n        </section>\r\n        <!-- Services-->\r\n        <section class=\"page-section\" id=\"services\">\r\n            <div class=\"container\">\r\n             \r\n                <h2 class=\"text-center mt-0\">At Services</h2>\r\n                <hr class=\"divider my-4\" />\r\n                <div class=\"row\">\r\n                   {%for service in Model.ContentItem.Content.Services.ContentItems%}\r\n                    <div class=\"col-lg-3 col-md-6 text-center\">\r\n                        <div class=\"mt-5\">\r\n                            <i class=\"{{service.Service.IconClass.Text}}\"></i>\r\n                          <h3 class=\"h4 mb-2\">{{service.TitlePart.Title}}</h3>\r\n                          <p class=\"text-muted mb-0\">{{service.HtmlBodyPart.Html}}</p>\r\n                        </div>\r\n                    </div>\r\n                    {%endfor%}\r\n                </div>\r\n              \r\n            </div>\r\n        </section>\r\n\r\n        <!-- Portfolio-->\r\n        <div id=\"portfolio\">\r\n            <div class=\"container-fluid p-0\">\r\n                <div class=\"row no-gutters\">\r\n                  {%for portfolio in Model.ContentItem.Content.Portfolio.ContentItems%}\r\n                    <div class=\"col-lg-4 col-sm-6\">\r\n                        <a class=\"portfolio-box\" href=\"/media/{{portfolio.Project.Image.Paths}}?width=240&amp;height=240\">\r\n                            <img class=\"img-fluid\" src=\"/media/{{portfolio.Project.Image.Paths}}\" alt=\"{{portfolio.Project.Image.MediaTexts}}\" />\r\n                            <div class=\"portfolio-box-caption\">\r\n                                <div class=\"project-category text-white-50\">{{portfolio.Project.Category.Text}}</div>\r\n                                <div class=\"project-name\">{{portfolio.TitlePart.Title}}</div>\r\n                            </div>\r\n                        </a>\r\n                    </div>\r\n                    {%endfor%}\r\n                    \r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- Call to action-->\r\n        <section class=\"page-section bg-dark text-white\" id=\"download\">\r\n            <div class=\"container text-center\">\r\n              {%for down in Model.ContentItem.Content.Download.ContentItems%}\r\n                <h2 class=\"mb-4\">{{down.Download.Content.Text}}</h2>\r\n                <a class=\"btn btn-light btn-xl\" href=\"{{down.Download.Link.Url}}\">{{down.Download.Link.Text}}</a>\r\n              {%endfor%}\r\n            </div>\r\n        </section>\r\n        <!-- Contact-->\r\n        <section class=\"page-section\" id=\"contact\">\r\n            <div class=\"container\">\r\n              {%for down in Model.ContentItem.Content.Contact.ContentItems%}\r\n                <div class=\"row justify-content-center\">\r\n                    <div class=\"col-lg-8 text-center\">\r\n                        <h2 class=\"mt-0\">{{down.Contact.HeadTitle.Text}}</h2>\r\n                        <hr class=\"divider my-4\" />\r\n                        <p class=\"text-muted mb-5\">{{down.Contact.Description.Text}}</p>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                  \r\n                    <div class=\"col-lg-4 ml-auto text-center mb-5 mb-lg-0\">\r\n                        <i class=\"{{down.Contact.PhoneIcon.Text}}\"></i>\r\n                        <div>{{down.Contact.PhoneNumber.Text}}</div>\r\n                    </div>\r\n                    <div class=\"col-lg-4 mr-auto text-center\">\r\n                        <i class=\"{{down.Contact.MailIcon.Text}}\"></i>\r\n                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->\r\n                        <a class=\"d-block\" href=\"mailto:{{down.Contact.MailAddress.Text}}\">{{down.Contact.MailAddress.Text}}</a>\r\n                    </div>\r\n                </div>\r\n              {%endfor%}\r\n            </div>\r\n        </section>",
+          "Description": "A template for the Landing Page content type"
+        }
+      }
+    }
+  ]
+}
